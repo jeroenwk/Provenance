@@ -205,6 +205,7 @@
 		<string>_altserver._tcp</string>
 		<string>_http._tcp</string>
 		<string>_webdav._tcp</string>
+        <string>_idevicedebuglauncher._tcp</string>
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>Used for album artwork</string>

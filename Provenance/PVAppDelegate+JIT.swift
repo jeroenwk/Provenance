@@ -9,21 +9,17 @@
 import Foundation
 import PVSupport
 import UIKit
+import idevicedebuglauncherlibswift
 
 // MARK: - JIT
 extension PVAppDelegate {
     public func enableJIT() {
-#if os(iOS)
-        guard !DOLJitManager.shared().appHasAcquiredJit() else {
-            ILOG("JIT: JIT already enabled")
-            return
+        Task {
+            if await idevicedebuglauncherlib().findAndConnect() {
+                self._enableJIT()
+            }
         }
-        if PVSettingsModel.shared.debugOptions.autoJIT {
-            _enableJIT()
-        }
-#else
-        WLOG("JIT: JIT not supported on this system yet.")
-#endif
+        
     }
     
 #if os(iOS)

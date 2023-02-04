@@ -65,6 +65,7 @@
 		11AFB2B72487C120000A3922 /* UISearchController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AFB2B62487C120000A3922 /* UISearchController+Rx.swift */; };
 		11BB0A2225AF7DFE004DEDC3 /* PVEmulatorViewController+PauseMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38A2A452102328600374CDD /* PVEmulatorViewController+PauseMenu.swift */; };
 		11BB0A2325AF7DFF004DEDC3 /* PVEmulatorViewController+PauseMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38A2A452102328600374CDD /* PVEmulatorViewController+PauseMenu.swift */; };
+		1249F80B298EF21300A5729B /* idevicedebuglauncherlib in Frameworks */ = {isa = PBXBuildFile; productRef = 1249F80A298EF21300A5729B /* idevicedebuglauncherlib */; };
 		1A1F0B6819CC4EB000764BE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1F0B6719CC4EB000764BE6 /* Assets.xcassets */; };
 		1A2A95AA17F7682400F1CB0D /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2A95A917F7682400F1CB0D /* libstdc++.dylib */; };
 		1A2B0E8C1AD187F4005FB77C /* testdata.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A2B0E8A1AD187F4005FB77C /* testdata.txt */; };
@@ -2689,6 +2690,7 @@
 				B3FAC94D292B45A3005E8B11 /* PVPotator.framework in Frameworks */,
 				936FDBEB295855670073628A /* libMoltenVK_Play.dylib in Frameworks */,
 				1AECF4A91966D76100F8704E /* libsqlite3.dylib in Frameworks */,
+				1249F80B298EF21300A5729B /* idevicedebuglauncherlib in Frameworks */,
 				B36B853529599A9600FDEA29 /* PVOpera.framework in Frameworks */,
 				B3AEDE22293F34370050BDB6 /* PVCrabEmu.framework in Frameworks */,
 				1AD4BC6F1BFD38D6007D6C7C /* AVFoundation.framework in Frameworks */,
@@ -4570,6 +4572,7 @@
 				37EEA2AA27BC81890070E222 /* Introspect */,
 				B3AFCF512977A61200A01010 /* PVLogging */,
 				B3E88CB72977AB4400C90E86 /* Reachability */,
+				1249F80A298EF21300A5729B /* idevicedebuglauncherlib */,
 			);
 			productName = Provenance;
 			productReference = 1A3D409417B2DCE4004DFFFC /* Provenance.app */;
@@ -5124,6 +5127,7 @@
 				B390B0E8276B2DB20018E065 /* XCRemoteSwiftPackageReference "AltKit" */,
 				37EEA2A927BC81880070E222 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 				B3E88CB62977AB4300C90E86 /* XCRemoteSwiftPackageReference "Reachability" */,
+				1249F809298EF21300A5729B /* XCRemoteSwiftPackageReference "idevicedebuglauncherlib" */,
 			);
 			productRefGroup = 1A3D409517B2DCE4004DFFFC /* Products */;
 			projectDirPath = "";
@@ -10731,6 +10735,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1249F809298EF21300A5729B /* XCRemoteSwiftPackageReference "idevicedebuglauncherlib" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jeroenwk/idevicedebuglauncherlib";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		37EEA2A927BC81880070E222 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect";
@@ -10838,6 +10850,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1249F80A298EF21300A5729B /* idevicedebuglauncherlib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1249F809298EF21300A5729B /* XCRemoteSwiftPackageReference "idevicedebuglauncherlib" */;
+			productName = idevicedebuglauncherlib;
+		};
 		37EEA2AA27BC81890070E222 /* Introspect */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 37EEA2A927BC81880070E222 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;

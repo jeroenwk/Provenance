@@ -20,6 +20,15 @@
         }
       },
       {
+        "package": "idevicedebuglauncherlib",
+        "repositoryURL": "https://github.com/jeroenwk/idevicedebuglauncherlib",
+        "state": {
+          "branch": "main",
+          "revision": "98b4b956562d76f660e025462e4b43a0195f14f7",
+          "version": null
+        }
+      },
+      {
         "package": "KeychainAccess",
         "repositoryURL": "https://github.com/kishikawakatsumi/KeychainAccess.git",
         "state": {
