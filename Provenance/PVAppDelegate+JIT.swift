@@ -16,7 +16,7 @@ extension PVAppDelegate {
     public func enableJIT() {
         Task {
             if await idevicedebuglauncherlib().findAndConnect() {
-                self._enableJIT()
+                ILOG("JIT: JIT enabled by idevicedebuglauncher")
             }
         }
         

@@ -70,6 +70,7 @@
 		1249F80E298EF2BA00A5729B /* libMoltenVK.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1249F80C298EF2B600A5729B /* libMoltenVK.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		1249F810298EF2CD00A5729B /* libMoltenVK.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1249F80F298EF2CC00A5729B /* libMoltenVK.dylib */; };
 		1249F811298EF2CE00A5729B /* libMoltenVK.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1249F80F298EF2CC00A5729B /* libMoltenVK.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1249F813298F0EF700A5729B /* idevicedebuglauncherlib in Frameworks */ = {isa = PBXBuildFile; productRef = 1249F812298F0EF700A5729B /* idevicedebuglauncherlib */; };
 		1A1F0B6819CC4EB000764BE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1F0B6719CC4EB000764BE6 /* Assets.xcassets */; };
 		1A2A95AA17F7682400F1CB0D /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2A95A917F7682400F1CB0D /* libstdc++.dylib */; };
 		1A2B0E8C1AD187F4005FB77C /* testdata.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A2B0E8A1AD187F4005FB77C /* testdata.txt */; };
@@ -2796,6 +2797,7 @@
 				B313647C2970095B00C34FED /* PVPCSXRearmed.framework in Frameworks */,
 				B324C2FD21919568009F4EDC /* AVFoundation.framework in Frameworks */,
 				B3FAC996292B476A005E8B11 /* PVGenesis.framework in Frameworks */,
+				1249F813298F0EF700A5729B /* idevicedebuglauncherlib in Frameworks */,
 				B3FAC98A292B4762005E8B11 /* PVEP128Emu.framework in Frameworks */,
 				B3FAC998292B476C005E8B11 /* PVGME.framework in Frameworks */,
 				B3FAC9B0292B4781005E8B11 /* PVPotator.framework in Frameworks */,
@@ -4613,6 +4615,7 @@
 				B3CE94B6293446AC0053B891 /* Introspect */,
 				B3AFCF992977A81F00A01010 /* PVLogging */,
 				B3E88CBD2977AB7C00C90E86 /* Reachability */,
+				1249F812298F0EF700A5729B /* idevicedebuglauncherlib */,
 			);
 			productName = ProvenanceTV;
 			productReference = 1AD481B41BA350A400FDA50A /* Provenance.app */;
@@ -10865,6 +10868,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		1249F80A298EF21300A5729B /* idevicedebuglauncherlib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1249F809298EF21300A5729B /* XCRemoteSwiftPackageReference "idevicedebuglauncherlib" */;
+			productName = idevicedebuglauncherlib;
+		};
+		1249F812298F0EF700A5729B /* idevicedebuglauncherlib */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1249F809298EF21300A5729B /* XCRemoteSwiftPackageReference "idevicedebuglauncherlib" */;
 			productName = idevicedebuglauncherlib;
