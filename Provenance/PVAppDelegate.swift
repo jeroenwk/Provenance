@@ -113,11 +113,16 @@ final class PVAppDelegate: UIResponder, UIApplicationDelegate {
         
         #if os(iOS)
         if PVSettingsModel.shared.debugOptions.autoJIT {
-            DOLJitManager.shared().attemptToAcquireJitOnStartup()
+            //DOLJitManager.shared().attemptToAcquireJitOnStartup()
+            self.enableJIT()
         }
         DispatchQueue.main.async { [unowned self] in
             self.showJITWaitScreen()
         }
+        #endif
+        
+        #if os(tvOS)
+        self.enableJIT()
         #endif
     }
 
