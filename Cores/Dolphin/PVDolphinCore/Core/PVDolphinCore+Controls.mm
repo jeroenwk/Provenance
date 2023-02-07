@@ -461,12 +461,12 @@ s8 joyx[4], joyy[4];
                     [self gamepadMoveEventOnPad:0 axis:16 value:CGFloat(-value)];
                     [self gamepadMoveEventOnPad:0 axis:17 value:CGFloat(-value)];
             };
-            controller.extendedGamepad.leftThumbstickButton.pressedChangedHandler = ^(GCControllerButtonInput* button, float value, bool pressed) {
-                    [self gamepadEventOnPad:4 button:ButtonManager::ButtonType::WIIMOTE_BUTTON_PLUS action:(pressed?ButtonManager::BUTTON_PRESSED:ButtonManager::BUTTON_RELEASED)];
-                    [self gamepadEventOnPad:4 button:ButtonManager::ButtonType::WIIMOTE_IR_RECENTER action:(pressed?ButtonManager::BUTTON_PRESSED:ButtonManager::BUTTON_RELEASED)];
-					// GC
-                    [self gamepadEventOnPad:0 button:ButtonManager::ButtonType::BUTTON_START action:(pressed?ButtonManager::BUTTON_PRESSED:ButtonManager::BUTTON_RELEASED)];
-            };
+//            controller.extendedGamepad.leftThumbstickButton.pressedChangedHandler = ^(GCControllerButtonInput* button, float value, bool pressed) {
+//                    [self gamepadEventOnPad:4 button:ButtonManager::ButtonType::WIIMOTE_BUTTON_PLUS action:(pressed?ButtonManager::BUTTON_PRESSED:ButtonManager::BUTTON_RELEASED)];
+//                    [self gamepadEventOnPad:4 button:ButtonManager::ButtonType::WIIMOTE_IR_RECENTER action:(pressed?ButtonManager::BUTTON_PRESSED:ButtonManager::BUTTON_RELEASED)];
+//					// GC
+//                    [self gamepadEventOnPad:0 button:ButtonManager::ButtonType::BUTTON_START action:(pressed?ButtonManager::BUTTON_PRESSED:ButtonManager::BUTTON_RELEASED)];
+//            };
             controller.extendedGamepad.rightThumbstickButton.pressedChangedHandler = ^(GCControllerButtonInput* button, float value, bool pressed) {
 					[self gamepadEventOnPad:4 button:ButtonManager::ButtonType::WIIMOTE_BUTTON_MINUS
 					 action:(pressed?ButtonManager::BUTTON_PRESSED:ButtonManager::BUTTON_RELEASED)];
