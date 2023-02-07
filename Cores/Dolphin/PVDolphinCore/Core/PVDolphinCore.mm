@@ -59,6 +59,7 @@
 #include "Core/PowerPC/PowerPC.h"
 #include "Core/State.h"
 #include "Core/WiiUtils.h"
+#include "Core/Config/DefaultLocale.h"
 
 #include "UICommon/CommandLineParse.h"
 #include "UICommon/UICommon.h"
@@ -328,6 +329,7 @@ static void UpdateWiiPointer();
     // Alerts
     Common::SetEnableAlert(false);
     
+    SConfig::GetInstance().SetLanguage(DiscIO::ToGameCubeLanguage(Config::GetDefaultLanguage()));
     //SConfig::GetInstance().SaveSettings();
 }
 
@@ -625,7 +627,9 @@ void Host_TitleChanged()
 
 std::vector<std::string> Host_GetPreferredLocales()
 {
-  return {};
+    NSString *language = [[NSLocale currentLocale] localeIdentifier];
+    
+    return { std::string([language UTF8String]) };
 }
 
 bool Host_RendererHasFullFocus()

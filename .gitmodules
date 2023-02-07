@@ -30,7 +30,7 @@
 	url = https://github.com/flyinghead/flycast.git
 [submodule "Cores/Dolphin/dolphin-ios"]
 	path = Cores/Dolphin/dolphin-ios
-	url = https://github.com/OatmealDome/dolphin.git
+	url = https://github.com/jeroenwk/dolphin.git
 [submodule "Cores/Play/Play-"]
 	path = Cores/Play/Play-
 	url = https://github.com/Provenance-Emu/Play-.git
