@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Cores/Dolphin/dolphin-ios/Source/iOS/DolphiniOS/DolphiniOS.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "container:Provenance.xcodeproj">
    </FileRef>
    <FileRef
